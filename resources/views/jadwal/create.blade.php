@@ -26,7 +26,7 @@
                         <div class="col-md-6 mb-3">
                             <label class="form-label">Mata Kuliah <span class="text-danger">*</span></label>
                             <select name="mata_kuliah_id" class="form-select @error('mata_kuliah_id') is-invalid @enderror">
-                                <option value="">-- Pilih Mata Kuliah --</option>
+                                <option value="">-- Pilih Matkul --</option>
                                 @foreach($matakuliahs as $mk)
                                 <option value="{{ $mk->id }}" {{ old('mata_kuliah_id') == $mk->id ? 'selected' : '' }}>{{ $mk->kode_mk }} - {{ $mk->nama_mk }}</option>
                                 @endforeach
